@@ -16,7 +16,6 @@ export function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     async function loadEvents() {

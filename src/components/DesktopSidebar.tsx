@@ -170,9 +170,9 @@ export function DesktopSidebar() {
                 />
                 <label htmlFor={buttonId} className="cursor-pointer block w-full h-full">
                   <div className="cyber-btn">
-                    <span aria-hidden="">_</span>
+                    <span aria-hidden="true">_</span>
                     {getButtonLabel(item.id)}
-                    <span className="cyber-btn__glitch" aria-hidden="">
+                    <span className="cyber-btn__glitch" aria-hidden="true">
                       {getButtonGlitch(item.id)}
                     </span>
                     <span className="cyber-btn__number">{getButtonNumber(index)}</span>
@@ -194,9 +194,9 @@ export function DesktopSidebar() {
               />
               <label htmlFor={buttonId} onClick={handleClick} className="cursor-pointer block w-full h-full">
                 <div className="cyber-btn">
-                  <span aria-hidden="">_</span>
+                  <span aria-hidden="true">_</span>
                   {getButtonLabel(item.id)}
-                  <span className="cyber-btn__glitch" aria-hidden="">
+                  <span className="cyber-btn__glitch" aria-hidden="true">
                     {getButtonGlitch(item.id)}
                   </span>
                   <span className="cyber-btn__number">{getButtonNumber(index)}</span>

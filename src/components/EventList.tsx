@@ -17,7 +17,7 @@ interface EventListProps {
 
 export function EventList({ events, isLoading, searchQuery: externalSearchQuery }: EventListProps) {
   const { isAuthenticated } = useAuth();
-  const [internalSearchQuery, setInternalSearchQuery] = useState('');
+  const [internalSearchQuery] = useState('');
   const searchQuery = externalSearchQuery !== undefined ? externalSearchQuery : internalSearchQuery;
 
   // Filter events based on authentication and search
