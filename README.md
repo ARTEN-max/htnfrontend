@@ -277,14 +277,6 @@ The codebase is structured for maintainability and scalability, with clear separ
 
 ---
 
-## 🤝 Contributing
 
-This is a challenge submission for Hack the North 2026. Feel free to explore the code and provide feedback!
 
-## 📄 License
 
-This project is created for the Hack the North 2026 Frontend Challenge.
-
-## 👤 Author
-
-Built with ❤️ for Hack the North 2026
