@@ -9,7 +9,6 @@ import { EventList } from '../components/EventList';
 import { DesktopWindow } from '../components/DesktopWindow';
 import { fetchAllEvents } from '../services/api';
 import type { TEvent } from '../types/event';
-import { useAuth } from '../contexts/AuthContext';
 
 export function Home() {
   const [events, setEvents] = useState<TEvent[]>([]);

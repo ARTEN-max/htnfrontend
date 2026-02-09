@@ -3,7 +3,7 @@
  * Radio button style sidebar - Top navigation
  */
 
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 
 export function DesktopSidebar() {
@@ -99,7 +99,7 @@ export function DesktopSidebar() {
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-40">
       <div className="cyber-radio-container">
         {allItems.map((item, index) => {
-          const isChecked = item.path && location.pathname === item.path;
+          const isChecked = Boolean(item.path && location.pathname === item.path);
           const buttonId = `${item.id}-top`;
 
           const handleClick = (e?: React.MouseEvent) => {

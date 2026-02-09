@@ -4,19 +4,11 @@
  */
 
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { AuthProvider } from './contexts/AuthContext';
 import { DesktopSidebar } from './components/DesktopSidebar';
 import { Login } from './components/Login';
 import { Home } from './pages/Home';
 import { EventDetail } from './pages/EventDetail';
-
-/**
- * Protected route wrapper that redirects to login if not authenticated
- */
-function ProtectedRoute({ children }: { children: React.ReactNode }) {
-  const { isAuthenticated } = useAuth();
-  return isAuthenticated ? <>{children}</> : <Navigate to="/login" replace />;
-}
 
 function AppRoutes() {
   const location = useLocation();
