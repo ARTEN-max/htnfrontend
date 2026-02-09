@@ -54,7 +54,11 @@ npm run build
 
 ### Part 2: Development Process & Reflection
 
-#### 1. Development Process
+To help us understand your work and thought process outside of code, please answer the following questions:
+
+---
+
+### 1. Walk us through your development process as you worked on this project. How did you plan out the structure and design of it? How did you decide on the tools you've used? Did you encounter any problems? And if so, how did you solve them? Are there any areas of your code that you're particularly proud of or want to point out?
 
 **Planning & Structure**
 
@@ -131,7 +135,31 @@ The design went through several iterations:
    - Complex fractal noise filters creating the island terrain background
    - Multiple octaves and lighting effects for depth
 
-#### 2. Future Extensions for Production
+---
+
+### 2. Given additional time, how would you extend your application to become a fully functional product that thousands of hackers and the general public would use at Hackathon Global Inc.™'s next event? Would you add more features and performance metrics? If so, what would they be?
+
+**Requirements Implementation Status**
+
+All core requirements from the challenge have been fully implemented:
+- ✅ Display all events from the API, sorted by `start_time`
+- ✅ Authentication system with username/password (hacker/htn2026)
+- ✅ Private events hidden behind login screen
+- ✅ Related events linking and navigation
+- ✅ Search functionality (by name, description, or speaker)
+- ✅ Responsive design for all devices
+- ✅ Event detail pages with full information
+
+**Additional Functionality Already Implemented**
+
+Beyond the core requirements, I've added several enhancements:
+- **Advanced Search**: Real-time search filtering as you type
+- **Cyberpunk Design System**: Unique visual identity with custom animations
+- **3D Interactive Cards**: Event cards with tilt effects and particle animations
+- **Smooth Navigation**: Scroll-to-section functionality for better UX
+- **Persistent Authentication**: Login state persists across page refreshes
+- **Error Handling**: Graceful error states with user-friendly messages
+- **Loading States**: Smooth loading animations throughout the app
 
 Given additional time, I would extend this application into a fully functional product with the following features:
 
@@ -204,7 +232,9 @@ Given additional time, I would extend this application into a fully functional p
 - **Monitoring**: Error tracking with Sentry, performance monitoring
 - **SEO**: Server-side rendering (Next.js) for better SEO and initial load times
 
-#### 3. Additional Thoughts
+---
+
+### 3. Any other thoughts you have (not limited to the previous questions)
 
 **Design Philosophy**
 
